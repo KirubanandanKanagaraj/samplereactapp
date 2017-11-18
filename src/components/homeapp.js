@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
 import splineChartOrange from '../images/spline-chart-orange.jpeg';
 import splineChartBlue from '../images/spline-chart-blue.jpeg';
 import splineProgress from '../images/spline-progress.jpeg';
@@ -25,7 +27,7 @@ export default class HomeApp extends Component {
                     </nav>
                   </div>
                   <div className="float-r">
-                    <div className="img-small-cirlce"></div>
+                      <Link to="/page1"><div className="img-small-cirlce"></div></Link>
                   </div>
                 </div>
 
@@ -90,7 +92,7 @@ export default class HomeApp extends Component {
                         </div>
                     </div>
                     <div className="disp-ma-chart">
-                        <img src={screen1Graph} alt="" />
+                        <Link to="/page2"><img src={screen1Graph} alt="" /></Link>
                     </div>
                 </section>
 
